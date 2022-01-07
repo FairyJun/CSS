@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接</title>
+</head>
+<style>
+    a:link{color:#000000; 
+            text-decoration:none;
+            }      /* 未访问链接*/
+    a:visited{color:#00FF00;
+                text-decoration:none; 
+            }  /* 已访问链接 */
+    a:hover {color:#FF00FF;
+            text-decoration:underline;
+            font-size:150%;
+            }  /* 鼠标移动到链接上 */
+    a:active {color:#0000FF;
+            text-decoration:underline;
+            }  /* 鼠标点击时 */
+    .click:link,.click:visited{
+        display:block;
+        font-weight:bold;
+        color:#FFFFFF;
+        background-color:#98bf21;
+        width:120px;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+    }
+    .click:hover,.click:active{
+        background-color:#7A991A;
+    }
+</style>
+<body>
+    <p><b><a href="#" >这是一个链接</a></b></p>
+    <a href="#" class="click">高级链接</a>
+</body>
+</html>
